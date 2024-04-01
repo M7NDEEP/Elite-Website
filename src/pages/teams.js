@@ -18,6 +18,7 @@ const teams = () => {
     { name: "Kripansh Kumrawat", role: "Java/Python Developer", imageSrc: "kripansh.jpg" ,insta:'https://www.instagram.com/_kripansh_',linkdin:'http://linkedin.com/in/kripansh29',github:'http://github.com/shallow-universe'},
     { name: "Nawadha Jadiya", role: "Java/Flutter Developer", imageSrc: "navadha.jpeg" ,insta:'https://www.instagram.com/nawadhaaa___',linkdin:'https://www.linkedin.com/in/nawadha-jadiya-aab426253',github:'https://github.com/NawadhaJadiya'},
     { name: "Ayush Maddhesiya", role: "Backend Developer", imageSrc: "ayush.jpeg" ,insta:'#',linkdin:'https://www.linkedin.com/in/ayush-maddhesiya/',github:'https://github.com/ayush-maddhesiya'},
+    { name: "Shreyanshi Bhagoriya", role: "UI/UX", imageSrc: "shreyanshi.jpeg" ,insta:'#',linkdin:'https://www.linkedin.com/in/shreyanshi-bhagoriya-582405268/',github:'https://github.com/ShreyanshiBhagoriya'},
   ];
   return (
     <>
