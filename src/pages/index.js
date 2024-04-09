@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           <div className={styles.getquote}>
-            <p style={{ fontSize: '1.2rem', letterSpacing: '0.5px' ,cursor:'pointer'}} onClick={handlequote}>Get a Quote <span>&#8594;</span></p>
+            <p style={{ fontSize: '1.2rem', letterSpacing: '0.5px' ,cursor:'pointer'}} onClick={handlequote}> <a href="https://forms.gle/bZ1vKGGaXZ8KecEC6" target="_blank">Contact Us</a> <span>&#8594;</span></p>
             <p style={{ fontSize: '1.1rem', letterSpacing: '0.5px',width:'55%'}}>
               {quote.slice(0,150)}
             </p>

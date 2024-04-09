@@ -7,10 +7,10 @@ import Link from "next/link";
 const Projects = () => {
   const projects = [
     {
-      title:'Project 1',
-      description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officia cum saepe excepturi neque enim assumenda ipsa consectetur autem sequi. Atque neque consectetur non magnam quibusdam minus. Veritatis enim quos necessitatibus cupiditate, aspernatur ea.',
-      image:'https://blog.depositphotos.com/wp-content/uploads/2021/11/20-Best-Website-Designs-from-Awwwards-in-2021-5.jpg.webp',
-      link:'',
+      title:'Abhyudaya Elite Attendance Tracker',
+      description:'Introducing our club new app designed for seamless attendance tracking and academic success. With this user-friendly tool, you can effortlessly monitor your class attendance and receive personalized suggestions on how many more classes you need to attend to avoid being detained from university exams. The app offers a simple interface and customizable settings, making it easy to stay on top of your academic commitments. Download now and take charge of your attendance management!',
+      image:'project.jpg',
+      link:'https://drive.google.com/file/d/1OtcRxFELDv92cUeeG5aoD0U7Pkq87d4d/view?usp=sharing',
       github:'https://github.com/M7NDEEP/'
     }
   ];
