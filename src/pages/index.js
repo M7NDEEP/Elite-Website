@@ -211,6 +211,25 @@ export default function Home() {
           <Link style={{ fontSize: '1rem', color: 'white', display: 'flex', justifyContent: 'flex-end', paddingTop: '2rem', paddingRight: '4rem', fontWeight: '500', letterSpacing: '1px' }} href="/"> See All Projects<span style={{ paddingLeft: '0.5rem', color: 'white' }}> &#8594;</span></Link>
         </div>
 
+        <div className={styles.page4_1}>
+          <h2 id="teamhash">Our Mentor</h2>
+          <h1>Our Awesome <br />mentor</h1>
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4rem', paddingLeft: '1rem', alignItems: 'center' }}>
+          <div className={styles.teamcard_4}>
+                    <img src="Namansir.jpg" alt="image not found" />
+                    <div className="flex flex-col
+                     text-white" style={{ position: 'absolute', bottom: '0%', left: '0', padding: '0.5rem' }}>
+                      <h3>Naman Sisodiya</h3>
+                      <p>Mentor</p>
+                    </div>
+                    <div className={styles.teamcardicon_4}>
+                    <Link href="https://www.instagram.com/naman29.ai" target='_blank'><IoLogoInstagram size={35} style={{ marginBottom: '0.5rem' }} /></Link>
+                    <Link href="https://www.linkedin.com/in/naman-sisodiya-7632622aa/" target='_blank'><FaLinkedinIn size={28} style={{ marginBottom: '0.5rem' }} /></Link>
+                    </div>
+                  </div>
+          </div>
+        </div>
+
         <div className={styles.page4}>
           <h2 id="teamhash">Our Team</h2>
           <h1>Awesome team <br />members</h1>
