@@ -9,10 +9,9 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const events = () => {
-  const upcomingevent = { name: "wittyhacks", location: "Indore, India", description: 'Wittyhacks prides itself on being Central India’s biggest community hackathon. Since its inception in 2018, Wittyhacks has been a platform where technology leaders and the brightest minds come together to collaborate on building tools that solve real problems.', date: '5 April 2024', link: '', image: 'https://wittyhacks4.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fe9e2409ea9734a56bedc7dc688c8ff3c%2Fassets%2Fcover%2F918.jpeg&w=1440&q=100' };
+  // const upcomingevent = { name: "wittyhacks", location: "Indore, India", description: 'Wittyhacks prides itself on being Central India’s biggest community hackathon. Since its inception in 2018, Wittyhacks has been a platform where technology leaders and the brightest minds come together to collaborate on building tools that solve real problems.', date: '5 April 2024', link: '', image: 'https://wittyhacks4.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fe9e2409ea9734a56bedc7dc688c8ff3c%2Fassets%2Fcover%2F918.jpeg&w=1440&q=100' };
 
-  // const pastevents = [{
-  // }];
+  const pastevents = [{ name: "wittyhacks", location: "Indore, India", description: 'Wittyhacks prides itself on being Central India’s biggest community hackathon. Since its inception in 2018, Wittyhacks has been a platform where technology leaders and the brightest minds come together to collaborate on building tools that solve real problems.', date: '5 April 2024', link: '', image: 'https://wittyhacks4.devfolio.co/_next/image?url=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fe9e2409ea9734a56bedc7dc688c8ff3c%2Fassets%2Fcover%2F918.jpeg&w=1440&q=100' },];
 
   return (
     <>
@@ -27,8 +26,9 @@ const events = () => {
           <div className={styles.box1}></div>
           <h1>Upcoming <span style={{ WebkitTextStroke: '2px white', color: 'transparent', letterSpacing: '1px' }}>Events</span></h1>
         </div>
+        <h4 style={{ textAlign: 'center' }}>Currenty there is no upcoming events </h4>
 
-        <div className={styles.page2}>
+        {/* <div className={styles.page2}>
           <img src={upcomingevent.image} alt="no_image_found" />
           <div className={styles.upcomingC}>
             <Link href={upcomingevent.link}><h1>{upcomingevent.name} <FaExternalLinkAlt size={20} style={{ marginLeft: '0.5rem' }} /></h1></Link>
@@ -36,20 +36,26 @@ const events = () => {
             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.5rem' }}>            <h2><FaLocationDot size={20} style={{ marginRight: '0.5rem' }} /> {upcomingevent.location}</h2>
               <h2><MdDateRange size={20} style={{ marginRight: '0.5rem' }} /> {upcomingevent.date}</h2></div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.page3}>
           <h3>Past Events</h3> <br />
-          {/*<div className={styles.page3past}>
-        <img src={upcomingevent.image} alt="no_image_found" />
-          <div className={styles.pastC}>
-            <Link href={upcomingevent.link}><h1>{upcomingevent.name} <FaExternalLinkAlt size={20} style={{marginLeft:'0.5rem'}}/></h1></Link>
-            <p>{upcomingevent.description}</p>
-              <div style={{display:'flex', justifyContent:'space-between',marginTop:'0.5rem'}}>            <h2><FaLocationDot size={20} style={{marginRight:'0.5rem'}}/> {upcomingevent.location}</h2>
-            <h2><MdDateRange size={20} style={{marginRight:'0.5rem'}}/> {upcomingevent.date}</h2></div>
-          </div>
-          </div>*/}
-          <h4 style={{ textAlign: 'center' }}>Currenty there is no past events </h4>
+          {
+            pastevents.map((event) => (
+              <div className={styles.page3past} key={event.name}>
+                <img src={event.image} alt="no_image_found" />
+                <div className={styles.pastC}>
+                  <Link href={event.link}><h1>{event.name} <FaExternalLinkAlt size={20} style={{ marginLeft: '0.5rem' }} /></h1></Link>
+                  <p>{event.description}</p>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '0.5rem' }}>
+                    <h2><FaLocationDot size={20} style={{ marginRight: '0.5rem' }} /> {event.location}</h2>
+                    <h2><MdDateRange size={20} style={{ marginRight: '0.5rem' }} /> {event.date}</h2>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+          {/* <h4 style={{ textAlign: 'center' }}>Currenty there is no past events </h4> */}
         </div>
 
       </main>

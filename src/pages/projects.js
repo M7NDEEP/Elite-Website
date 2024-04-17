@@ -11,7 +11,7 @@ const Projects = () => {
       description:'Introducing our club new app designed for seamless attendance tracking and academic success. With this user-friendly tool, you can effortlessly monitor your class attendance and receive personalized suggestions on how many more classes you need to attend to avoid being detained from university exams. The app offers a simple interface and customizable settings, making it easy to stay on top of your academic commitments. Download now and take charge of your attendance management!',
       image:'project.jpg',
       link:'https://drive.google.com/file/d/1OtcRxFELDv92cUeeG5aoD0U7Pkq87d4d/view?usp=sharing',
-      github:'https://github.com/M7NDEEP/'
+      github:'https://github.com/'
     }
   ];
 
@@ -36,7 +36,7 @@ const Projects = () => {
               <div className={styles.projectdtl}>
                 <Link href={project.link}><h1>{project.title}</h1></Link>
                 <p>{project.description}</p>
-                <Link className={styles.git} href={project.github}>GITHUB</Link>
+                <Link className={styles.git} href={project.github} target='_blank'>GITHUB</Link>
               </div>
             </div>
           ))}
